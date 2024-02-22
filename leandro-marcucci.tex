@@ -1,0 +1,108 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperxmp}
+% Set applicant's personal data for header
+\name{Leandro Marcucci}
+% \address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
+\address{github.com/leanucci \linebreak linkedin.com/in/leanucci}
+\contacts{+54 (11) 5773-3318 \linebreak leanucci@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer}{Ring}{May 2020 -- Present}
+			Billing Team
+			\begin{itemize}
+				\item Automated Stripe dispute resolution
+				\item Refactored ad-hoc backoffice scripts making them atomic, traceable and stable
+				\item In charge of executing ad-hoc scripts to run batch operations unsupported by backoffice 
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Lead backend engineer}{Properati}{July 2018 -- May 2020}
+			\begin{itemize}
+				\item In charge of coordinating the backend team
+        				\item Developed an api in Ruby to enable realtors to publish real estate ads to our platform
+				\item Had a major role in designing and implementing a new backend in Golang
+        \item Maintained the legacy backend written in Ruby and Sinatra
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer}{Gradeus}{Sep 2016 -- July 2018}		
+			\begin{itemize}
+				\item Developed a customer tracking tool designed to track user activity through a custom funnel
+        				\item Developed both frondt and backend for a panel to display stats for the user tracking tool
+        				\item Improved scalability allowing 4x increase in traffic without scaling the infrastructure
+				\item Developed a public api to enable customers design their own customer facing forms
+        				\item Updated dependencies, refactored the test suite, upgraded ruby and rails versions
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer}{ITWarp}{Aug 2015 -- Sep 2016}
+			\begin{itemize}
+				\item Worked as a consultant for several projects, implementing features across the stack
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Software Engineer}{Restorando}{Oct 2013 -- Sep 2016}
+			\begin{itemize}
+				\item Refactored the platforms billing system in compliance of newer pricing schemes
+        				\item Maintained an internal tool to automate Google Adwords management
+        				\item Data Warehouse ETL maintenance
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{Bravo} (2009). Ruby gem to interact with Argentinian Tax Collection office. Implements the authentication and reporting of invoices, 
+creation of barcode and printable invoice
+				\item \textbf{Open Source}. I often collaborate with open source projects of my interes, providing test coverage or fixing bugs
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{Programming Languages}{}{}	
+			\begin{itemize}
+				\item Ruby, Javascript (vanilla), Golang, Bash, Python, HTML, Css
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Other}{}{}
+			\begin{itemize}
+				\item PostgreSQL, Mysql, Redis, Rails, HTML, Rails, Bootstrap, Docker, Heroku, AWS, Google Cloud
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
